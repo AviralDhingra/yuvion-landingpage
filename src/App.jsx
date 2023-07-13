@@ -126,10 +126,10 @@ function Modal(props) {
                       onChange={(e) => setStoreSize(e.target.value)}
                     >
                       <option value="">Select Business Size</option>
-                      <option value="small">1-10 Employees</option>
-                      <option value="medium">10-50 Employees</option>
-                      <option value="medium">50-200 Employees</option>
-                      <option value="large">200+ Emplyees</option>
+                      <option value="1-10 Employees">1-10 Employees</option>
+                      <option value="10-50 Employees">10-50 Employees</option>
+                      <option value="50-200 Employees">50-200 Employees</option>
+                      <option value="200+ Employees">200+ Employees</option>
                     </select>
                     <button
                       type="submit"
