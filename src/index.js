@@ -1,13 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <footer className="text-center py-5">
+      By Sigma Forge
+      {/* <br />
+      <br />
+      <p className="text-blue-400 underline underline-offset-1">
+        aviral.dhingra.2008@gmail.com
+      </p> */}
+    </footer>
   </React.StrictMode>
 );
 

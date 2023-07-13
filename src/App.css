@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
-}
+/* css grid */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* applies after most common phone size is exceeded */
+@media (min-width: 769px) {
+  #emailRegister {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 769px) {
+  #emailRegister {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.7rem;
   }
 }
+
+input,
+input::placeholder {
+  font: 2rem;
+}
+
+/* #main_section_div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} */
